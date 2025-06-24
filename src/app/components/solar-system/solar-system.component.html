@@ -1,0 +1,35 @@
+<div class="page-container">
+  <h1>Sistema Solar Interactivo</h1>
+
+<canvas  #canvas class="solar-canvas"></canvas>
+<div class="planet-bar">
+  <div
+    *ngFor="let planet of planetData"
+    class="planet-icon"
+    [style.background-image]="'url(' + planet.texture + ')'"
+    (click)="showPlanetInfo(planet)"
+    title="{{ planet.name }}"
+  ></div>
+</div>
+
+<div class="planet-info" *ngIf="selectedPlanet">
+    <div class="planet-icon" [style.background-image]="'url(' + selectedPlanet.texture + ')'" ></div>
+  <h3>{{ selectedPlanet.name }}</h3>
+  
+  
+  <p>{{ selectedPlanet.info }}</p>
+  <button (click)="selectedPlanet = null">Cerrar</button>
+</div>
+<div class="speed-control">
+  <label for="speedRange">Velocidad orbital: </label>
+  <input
+    type="range"
+    id="speedRange"
+    min="0"
+    max="0.1"
+    step="0.0001"
+    [(ngModel)]="orbitSpeed"
+  />
+  <span>{{ orbitSpeed | number: '1.2-3' }}</span>
+</div>
+</div>
