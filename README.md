@@ -1,4 +1,7 @@
 # SistemaSolarThreejs
+![imagen](https://github.com/user-attachments/assets/3826f7ad-8b14-4448-88ea-a091c821aaa6)
+![imagen](https://github.com/user-attachments/assets/9b5de0f4-c9a7-45bc-8eaf-6a3260d5830e)
+![imagen](https://github.com/user-attachments/assets/1929425d-3971-4292-ac0f-0d554430f570)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.17.
 
